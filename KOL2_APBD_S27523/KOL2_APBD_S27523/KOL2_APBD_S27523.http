@@ -1,0 +1,6 @@
+@KOL2_APBD_S27523_HostAddress = http://localhost:5205
+
+GET {{KOL2_APBD_S27523_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
