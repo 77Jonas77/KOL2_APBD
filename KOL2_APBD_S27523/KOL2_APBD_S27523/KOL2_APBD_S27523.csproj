@@ -22,7 +22,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Context\" />
       <Folder Include="Controllers\" />
       <Folder Include="Exceptions\" />
       <Folder Include="Models\Domain\" />
