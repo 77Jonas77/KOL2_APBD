@@ -1,4 +1,6 @@
 using KOL2_APBD_S27523.Context;
+using KOL2_APBD_S27523.Services;
+using KOL2_APBD_S27523.Services.Abstractions;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,8 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// builder.Services.AddScoped<IAccountService, AccountService>();
-// builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ICharacterService, CharacterService>();
 
 builder.Services.AddDbContext<DatabaseContext>(
     opt => opt.UseSqlServer(
